@@ -1,8 +1,10 @@
-# contoh_modularisasi
+# Flutter SDK
 
-A new Flutter project.
+Flutter SDK 3.13.0
 
-## Getting Started
+Dart SDK 3.1.0
+
+## Build Runner
 ```
 flutter pub add freezed_annotation
 flutter pub add --dev build_runner
