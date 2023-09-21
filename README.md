@@ -15,7 +15,7 @@ flutter pub run build_runner build --delete-conflicting-outputs
 ## Signing Android
 ```cd android
 keytool -genkey -v -keystore upload-keystore.jks -storetype JKS -alias 12345678 -keyalg RSA -keysize 2048 -validity 10000 -deststoretype pkcs12```
-
+```
 create key.properties at /android with this :
 ```
 storePassword=12345678
