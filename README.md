@@ -38,7 +38,8 @@ if (keystorePropertiesFile.exists()) {
 
 in android 
 
-    ```signingConfigs {
+    ```
+    signingConfigs {
        release {
            keyAlias keystoreProperties['keyAlias']
            keyPassword keystoreProperties['keyPassword']
@@ -81,25 +82,33 @@ in android
             dimension "app"
             resValue "string", "app_name", "Contoh Modularisasi Mobile"
         }
-    }```
+    }
+    ```
 
 ## Module
 create module
 
-```cd features
-flutter create -t module --org com.example.contoh_modularisasi cart```
+```
+cd features
+flutter create -t module --org com.example.contoh_modularisasi cart
+```
 
 add this at pubspec.yaml module
 
-```publish_to: none```
+```
+publish_to: none
+```
 
 rename lib/main.dart to lib/cart.dart, and add it
 
-```library cart;```
+```
+library cart;
+```
 
 example load module to root pubspec.yaml
 
-```dependencies:
+```
+dependencies:
 
   flutter:
     sdk: flutter
@@ -115,4 +124,5 @@ example load module to root pubspec.yaml
     path: features/produk
     
   cart:
-    path: features/cart```
+    path: features/cart
+```
