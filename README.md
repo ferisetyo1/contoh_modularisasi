@@ -38,7 +38,7 @@ if (keystorePropertiesFile.exists()) {
 
 in android 
 
-    ```
+```
     signingConfigs {
        release {
            keyAlias keystoreProperties['keyAlias']
@@ -83,7 +83,7 @@ in android
             resValue "string", "app_name", "Contoh Modularisasi Mobile"
         }
     }
-    ```
+```
 
 ## Module
 create module
